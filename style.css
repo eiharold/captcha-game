@@ -1,0 +1,192 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #eee;
+    padding: 0 10px;
+}
+
+.container {
+    background: #fff;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 40px auto 10px auto;
+    box-shadow: 0px 0px 10px #ddd;
+    animation: fade .5s forwards;
+    padding-bottom: 20px;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+hr {
+    border: none;
+    border-bottom: 1px dotted #ddd;
+    margin: 10px 0 5px 0;
+}
+
+.wrap-image {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#robot {
+    max-width: 200px;
+    margin: 20px;
+    width: 90%;
+}
+
+
+h1 {
+    color: #F50057;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+h2 {
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+h4 {
+    text-transform: uppercase;
+    background: #F50057;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 11px;
+    padding: 10px;
+}
+
+.captcha, .secret {
+    font-family: monospace;
+    text-align: center;
+    font-size: 36px;
+    margin: 0px;
+    color: #333;
+    display: none;
+}
+
+#question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    background: #eee;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 16px;
+    font-family: monospace;
+    margin: 10px 5px;
+    max-width: 150px;
+}
+
+button, .start, .restart, .gonext {
+    padding: 13px 20px;
+    background: #FF3D82;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.start, .restart {
+    max-width: 100px;
+    text-align: center;
+    margin: 30px auto 20px auto;
+}
+
+.gonext {
+    max-width: 150px;
+    text-align: center;
+    margin: 30px auto 20px auto;
+}
+
+.homescreen, .game, .win, .lose, .next {
+    display: none;
+}
+
+.active {
+    display: block;
+    animation: fade .5s forwards;
+}
+
+.rules {
+    font-size: 12px;
+    text-align: center;
+    margin: 20px;
+    font-style: italic;
+}
+
+.win, .lose {
+    border: 1px dotted #F50057;
+    border-radius: 8px;
+    max-width: 220px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.next {
+    margin: 20px;
+}
+
+
+button:hover, .start:hover, .restart:hover, .gonext:hover {
+    background: #F50057;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+}
+
+.score {
+    text-align: center;
+    margin: 5px;
+    font-size: 12px;
+}
+
+.total {
+    font-weight: 600;
+}
+
+.credits {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: .5px;
+    margin-bottom: 20px;
+}
+
+.credits a {
+    text-decoration: none;
+    color: #F50057;
+    font-weight: 600;
+}

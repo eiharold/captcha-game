@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are you a robot? - The Captcha Checker</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h4>Minigame - The Captcha Checker</h4>
+        <div class="wrap-image">
+            <img id="robot" src="/img/undraw_Artificial_intelligence_oyxx.svg">
+        </div>
+        <div class="title">
+            <h1>Are you a ROBOT?</h1>
+            <h2>Discover here</h2>
+            <hr>
+            <div class="homescreen active">
+                <div class="rules">Quickly see the CAPTCHA number and enter it in the confirmation field. You will have
+                    3 seconds to memorize it.</div>
+                <div class="start">START</div>
+            </div>
+
+            <div class="game">
+                <h3>Enter the CAPTCHA below:</h3>
+                <p class="captcha"></p>
+                <p class="secret"></p>
+                <form id="question" action="question">
+                    <input type='number' name="answer" class="answer" for="question">
+                    <button type="submit" class="go">Check</button>
+                </form>
+                <p class="score">Score: <span class="total">0</span></p>
+            </div>
+
+            <div class="lose">
+                <h1>Bot detected</h1>
+                <h2 class="score">Final Score: <span class="finalscore">0</span></h2>
+                <div class="restart">RESTART</div>
+            </div>
+
+            <div class="win">
+                <h1>Nice, Human!</h1>
+                <div class="rules"><div class="rules">You proved that you are not a bot, but a memory machine!</div></div>
+                <div class="restart">RESTART</div>
+            </div>
+
+            <div class="next">
+                <h1>Nice!</h1>
+                <h2 class="stage">Ready for the next?</h2>
+                <div class="gonext">NEXT STAGE</div>
+            </div>
+
+        </div>
+    </div>
+    <p class="credits">Developed by <a href="http://eiharold.com" target="_blank">eiHarold!</a></p>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
